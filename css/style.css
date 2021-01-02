@@ -6,3 +6,33 @@
 html {
     font-size: 62.5%;
 }
+body {
+    font-family: Helvetica, sans-serif;
+}
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.header {
+    height: 50px;
+    background-color: #7acc2d;
+}
+.nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__menu {
+    display: flex;
+}
+.nav__menu  .nav__item {
+    padding-left: 10px;
+    list-style: none;
+}
+.nav__menu .nav__item a {
+    text-decoration: none;
+}
+.nav__menu .nav__item a:hover {
+    color: white;
+}
