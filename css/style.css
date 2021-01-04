@@ -196,15 +196,45 @@ body {
 .cards-container .card .details .opinion{
     font-size: 1.2rem;
 }
-@media scree and (max-width: 1023px) {
-
+@media screen and (max-width: 1023px) {
+    .cards-container {
+        grid-template-columns: repeat(3, 239px);
+        justify-content: center;
+    }
 }
-@media scree and (max-width: 767px) {
-
+@media screen and (max-width: 767px) {
+    .main-section .title {
+        width: 100%;
+        padding: 0 2em;
+    }
+    .main-section .products {
+        flex-wrap: wrap;
+        height: 250px;
+    }
+    .main-section .product {
+        margin-top: 50px;
+        width: 60%;
+    }
+    .main-section .curve {
+        margin-top: 120px;
+    }
+    .cards-container {
+        grid-template-columns: repeat(2, 239px);
+        justify-content: center;
+    }
 }
-@media scree and (max-width: 479px) {
-
+@media screen and (max-width: 479px) {
+    .main-section .title {
+        width: 100%;
+        margin: 100px auto 0;
+        font-size: 3rem;
+        text-align: center;
+    }
+    .cards-container {
+        grid-template-columns: 239px;
+        justify-content: center;
+    }
 }
-@media scree and (max-width: 319px) {
+@media screen and (max-width: 319px) {
 
 }
