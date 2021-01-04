@@ -196,6 +196,22 @@ body {
 .cards-container .card .details .opinion{
     font-size: 1.2rem;
 }
+.footer {
+    padding: 2em;
+    background-color: var(--green-color);
+}
+.container {
+    display: flex;
+    max-width: 1280px;
+    height: 6em;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.container a {
+    font-size: 1.7rem;
+    color: white;
+}
 @media screen and (max-width: 1023px) {
     .cards-container {
         grid-template-columns: repeat(3, 239px);
@@ -242,6 +258,10 @@ body {
     .cards-container {
         grid-template-columns: 239px;
         justify-content: center;
+    }
+    .container{
+        display: initial;
+        text-align: center;
     }
 }
 @media screen and (max-width: 319px) {
