@@ -3,13 +3,14 @@
     --green-color: #7acc2d;
     --white-color: white;
     --black-color: #313337;
+    --grey-color:  rgba(0, 0, 0, 0.2);
     /* tipography */
     --normal-font: 1.2rem;
     /* espacing */
     --space: 10px;
     /* box-shadow */
     --box-shadow--green: 0 0 1px #26e5e9;
-    --box-shadow--grey: 0 0 2px rgba(0, 0, 0, 0.1) ;
+    --box-shadow--grey: 0 3px 6px rgba(0, 0, 0, 0.2) ;
 }
 *{
     box-sizing: border-box;
@@ -143,7 +144,7 @@ body {
 .beneficts-grid {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 .beneficts-card {
     width: 212px;
@@ -164,6 +165,36 @@ body {
 }
 .beneficts-card .text {
     font-size: 1.7rem;
+}
+/* testimonials */
+.testimonials {
+    max-width: 1280px;
+    margin: 0 auto 50px;
+    border-top: 1px solid var(--grey-color);
+}
+.testimonials .title {
+    font-size: 41px;
+    margin: 50px 0;
+    text-align: center;
+}
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 239px);
+    justify-content: center;
+    gap: 15px;
+}
+.cards-container .card {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+}
+.cards-container .card .details {
+    padding: 5%;
+}
+.cards-container .card .details .name{
+    font-size: 2.3rem;
+}
+.cards-container .card .details .opinion{
+    font-size: 1.2rem;
 }
 @media scree and (max-width: 1023px) {
 
