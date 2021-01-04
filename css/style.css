@@ -141,7 +141,7 @@ body {
     height: 100%;
     margin: 150px auto 100px;
 }
-.beneficts-grid {
+.beneficts-container {
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -217,6 +217,15 @@ body {
     }
     .main-section .curve {
         margin-top: 120px;
+    }
+    .beneficts-container {
+        flex-wrap: wrap;
+        padding: 2em;
+        gap: 10em;
+    }
+    .beneficts-card {
+        width: 80%;
+        height: auto;
     }
     .cards-container {
         grid-template-columns: repeat(2, 239px);
